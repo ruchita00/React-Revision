@@ -25,11 +25,21 @@ class UserClass extends React.Component {
     this.setState({ userInfo: josn });
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevPros, prevState) {
+    // if (
+    //   // [] -- array dependency
+    //   this.state.userInfo.name !== prevState.userInfo.name ||
+    //   this.state.userInfo.name !== prevState.userInfo.name
+    // )
+
+    this.timer = setInterval(() => {
+      console.log("hello op");
+    }, 1000);
     console.log("component did update");
   }
 
   componentWillUnmount() {
+    clearInterval(this.timer);
     console.log("componentWillUnmount");
   }
   render() {
