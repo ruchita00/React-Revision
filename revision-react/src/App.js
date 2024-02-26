@@ -4,6 +4,7 @@ import HookUseEffect from "./components/AllHooks.js/HookUseEffect";
 import HookUseMemo from "./components/AllHooks.js/HookUseMemo";
 import HookUseRef from "./components/AllHooks.js/HookUseRef";
 import HookUseContext from "./components/AllHooks.js/HookUseContext";
+import HookUseReducer from "./components/AllHooks.js/HookUseReducer";
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       {/* <HookUseEffect /> */}
       {/* <HookUseMemo /> */}
       {/* <HookUseRef /> */}
-      <HookUseContext />
+      {/* <HookUseContext /> */}
+      <HookUseReducer />
     </div>
   );
 };
