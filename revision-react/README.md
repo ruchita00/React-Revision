@@ -75,3 +75,15 @@
 9. what is useMemo?
 - useMemo hook is used to memoize the value
 - when the same task repeat again and again it caches the value of particular task
+
+10. what is useRef?
+- useref is used to create mutable reference in the dom element or any other value that persiists across re-renderd of component
+
+ - use:
+   1. accessing dom elements:
+    you can use useref to get direct access elements and interact with the imperatively, like focusing the input field, mesaureing the dimentsions
+   2. preserving the value between renders without casuing re-redneres:
+    unlike usestate changing the value of useref doesnt riggers re-render that value should persisit between renderes without afftecting rendering
+   3. storing the mutable values: you can use useref to store mutable values that you want to persist between renders but you dont trigger re-renders when changed
+
+useRef should be used when you need to maintain a reference value that persisits between the renderes without causing re-renders. 
