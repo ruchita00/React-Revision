@@ -72,4 +72,6 @@
 - componenentDidupdate()
 - componentwillunmount() (clenar function)
 
-9. 
+9. what is useMemo?
+- useMemo hook is used to memoize the value
+- when the same task repeat again and again it caches the value of particular task
