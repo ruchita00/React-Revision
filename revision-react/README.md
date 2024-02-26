@@ -87,3 +87,15 @@
    3. storing the mutable values: you can use useref to store mutable values that you want to persist between renders but you dont trigger re-renders when changed
 
 useRef should be used when you need to maintain a reference value that persisits between the renderes without causing re-renders. 
+
+
+11. What is useContext?
+- useContext is hook provded by react a js library for building user interfaces.
+- it allows you to access a context object that has been created by react.createContext(function)
+- context in react is way to pass data through the component tree without having to pass props down manually at every level.
+- it is useful to sharing values like theme user authentication status or preferred language across many components without explicitly passing them through each components props
+
+- works:
+1. Create context: you first create a context object using React.createContext() this function returns providers and consumer
+2. Provide context: you wrap the part of component tree  that needs access to the context with provider the provider compoenen takes a value prop which is data you want to share
+3. consume the context: to access to context value within a component you use the useContext hook this hook takes the context object as an arg and return current context value
