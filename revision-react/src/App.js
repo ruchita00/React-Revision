@@ -10,6 +10,8 @@ import HookContext from "./components/AllHooks.js/HookContext";
 import useFetchData from "./components/AllHooks.js/useFetchData";
 import HookRef from "./components/AllHooks.js/HookRef";
 import HookCallback from "./components/AllHooks.js/HookCallback";
+import HookMemo from "./components/AllHooks.js/HookMemo";
+import HookReducer from "./components/AllHooks.js/HookReducer";
 
 const App = () => {
   const data = useFetchData();
@@ -29,7 +31,9 @@ const App = () => {
         <img src={data.avatar_url} alt="url" />
       </p> */}
       {/* <HookRef /> */}
-      <HookCallback />
+      {/* <HookCallback /> */}
+      {/* <HookMemo /> */}
+      <HookReducer />
     </div>
   );
 };
