@@ -7,9 +7,10 @@ import HookUseContext from "./components/AllHooks.js/HookUseContext";
 import HookUseReducer from "./components/AllHooks.js/HookUseReducer";
 import useFetchAPI from "./components/AllHooks.js/useFetchAPI";
 import HookContext from "./components/AllHooks.js/HookContext";
+import useFetchData from "./components/AllHooks.js/useFetchData";
 
 const App = () => {
-  const data = useFetchAPI();
+  const data = useFetchData();
 
   console.log(data);
   return (
@@ -19,12 +20,12 @@ const App = () => {
       {/* <HookUseMemo /> */}
       {/* <HookUseRef /> */}
       {/* <HookUseContext /> */}
-      <HookContext />
+      {/* <HookContext /> */}
       {/* <HookUseReducer /> */}
-      {/* <p>
+      <p>
         <h1>{data.name}</h1>
         <img src={data.avatar_url} alt="url" />
-      </p> */}
+      </p>
     </div>
   );
 };
