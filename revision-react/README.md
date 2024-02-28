@@ -178,6 +178,128 @@ deployment process
 
 
 
+# Namaste react interview questions
+
+1. Hooks
+- useState
+- useEffect
+- useContext
+- useReducer
+- useMemo
+- useCallback
+- useRef
+
+2. Higher order component (machine coding component)
+- what 
+- why 
+- when 
+- how
+
+3. Life cycle method of components
+- constructor
+- render with dummy data
+- componentdidmount (api call)
+- render with api data
+- component did update
+- component will unmount
+
+4. state management (all about data)
+- state/props
+- props drilling
+- context
+- redux/zustand (toolkit rtk)
+
+5. custom hooks
+- when to use it write a code for custom hooks
+
+6. lazy loading
+ - code splitting
+ - chucking
+ - suspense
+
+7. virtual dom:
+   - why should we use react
+   - reconciliation process and react fiber
+   - diffing algorithm 
+
+8. SSR VS CSR (hot interview question)
+  - server side rendering 
+  - client side rendering
+  - seo and performance
+
+9. Routing (RBAC):
+  - react router
+  - protected route
+  - dynamic routing
+
+10. Testing
+  - react testing library
+
+
+11. Async tasks
+   - api calls
+   - events
+   - promises
+
+12. Performance
+    - shimmer ui (user experience)
+    - assest optimization
+    - write optimizie code 
+    - bundler level - code splitting
+    - cdn / server level
+    - redering the components
+
+13. Styling
+    - tailwind css
+    - style x - facebook
+    - material ui
+    - bootstrap
+    - ant ui
+    - chakra ui
+    - basic css (inline/external/internal)
+
+# system design concept
+14. accessbility
+15. perfomance
+16. security
+17. testability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
