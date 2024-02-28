@@ -99,3 +99,137 @@ useRef should be used when you need to maintain a reference value that persisits
 1. Create context: you first create a context object using React.createContext() this function returns providers and consumer
 2. Provide context: you wrap the part of component tree  that needs access to the context with provider the provider compoenen takes a value prop which is data you want to share
 3. consume the context: to access to context value within a component you use the useContext hook this hook takes the context object as an arg and return current context value
+
+- Debounce: debounce is useful when you want to ensure that a function is only executed once after a series of rapid inputs. this is particularly helpful when dealing with user input events that may trigger multiple times in a short period 
+
+- throtting : throttline is usefull when you want to ensure that a function is called at a limited o=rate or frequency without missing any important inputs or events
+
+
+
+React Revision Topics:
+
+React Hooks
+1.useState - update the state
+2.useEffect - use to rerender the value
+3.useContext - state mangemenet create context object using react.createcontext
+4.useReducer - same work as redux
+5.useMemo - memoize the value
+6.useCallback - memoizie the function
+7.useRef - current value - create mutable reference in dom element
+8. customHook
+
+React lifecycle method:
+custructor()
+render() -- with dummy data
+componentdidMount() - api called with api data
+componentdidupdate()
+componentwillunmount() -clear function
+
+what is react
+react is javascript is library which is used to create a single page application
+react is created and maintained by facebook developers
+its follows component based architchture
+there are some advantages of react:
+1.react follows component based articture
+2. jsx : react support jsx where we can write html like structure inside the js file it is easy 
+to write the component
+3. react is having declarative syntax: react is declarative which means what should render
+ on ui on basis on react update the dom
+4. react is having virtual dom:
+ it is nothing but the memory reperesentation of real dom whenver the any changes happend 
+in react component the current vitrual dom compoare which the previous virtal dom and this 
+process is known as reconcilation process. reconsicilation process is very effect
+it is followes the diffing algorithm on the basis of algorithm react see the minimal 
+update changes in the dom and they are batch the changes and update the real dom 
+5. raect also having code splitting: where js bundle divided into smaller chuncks and 
+only load when it needed it improve the initial loading time
+6. lazy loading: react also follows the lazy and loading where component can only load when it 
+neccessary to render it improve the performance
+7. server side rendering: react follows server side rendering where html page run on the server 
+and it send to the client to render the ui on browser
+8. having rich ecosystm: we have large eco system of react developers
+9. unidirectonal flow: in react the data flow is unidireactional
+10. reausablity: react component can be reusae across the application
+11. developer tool react having dev tool to easy to debug the application
+
+
+hydration
+performance optimization techniquie 
+debugging techniquie
+redux, advantage disadvantages, middleware
+advantage of redux over context api
+monitoring tools
+analytics tool- google anaytics , firebase
+testing libraries - react testing library, jest, enzyme
+
+debounce
+pagination
+infinite scroll
+virtual list
+form with validations- formik, yup, custom form also create
+throtlling
+nested api call
+react router
+authentication flow
+social login
+erro 
+
+deployment process
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
