@@ -1,39 +1,16 @@
-import React from "react";
-import UseStateHook from "./components/AllHooks.js/UseStateHook";
-import HookUseEffect from "./components/AllHooks.js/HookUseEffect";
-import HookUseMemo from "./components/AllHooks.js/HookUseMemo";
-import HookUseRef from "./components/AllHooks.js/HookUseRef";
-import HookUseContext from "./components/AllHooks.js/HookUseContext";
-import HookUseReducer from "./components/AllHooks.js/HookUseReducer";
-import useFetchAPI from "./components/AllHooks.js/useFetchAPI";
-import HookContext from "./components/AllHooks.js/HookContext";
-import useFetchData from "./components/AllHooks.js/useFetchData";
-import HookRef from "./components/AllHooks.js/HookRef";
-import HookCallback from "./components/AllHooks.js/HookCallback";
-import HookMemo from "./components/AllHooks.js/HookMemo";
-import HookReducer from "./components/AllHooks.js/HookReducer";
-
+import React, { useState } from "react";
+import HookContext from "./components/Revision/HookContext";
 const App = () => {
-  const data = useFetchData();
-
-  console.log(data);
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleSearch = (value) => {
+    setSearchTerm(value);
+  };
   return (
     <div>
-      {/* <UseStateHook /> */}
-      {/* <HookUseEffect /> */}
-      {/* <HookUseMemo /> */}
-      {/* <HookUseRef /> */}
-      {/* <HookUseContext /> */}
-      {/* <HookContext /> */}
-      {/* <HookUseReducer /> */}
-      {/* <p>
-        <h1>{data.name}</h1>
-        <img src={data.avatar_url} alt="url" />
-      </p> */}
-      {/* <HookRef /> */}
-      {/* <HookCallback /> */}
-      {/* <HookMemo /> */}
-      <HookReducer />
+      {/* <NewHooks /> */}
+      <h1>debounced exmaple</h1>
+      <p>searching for:{searchTerm}</p>
+      <HookContext />
     </div>
   );
 };

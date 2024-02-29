@@ -4,11 +4,11 @@ export const DemoHook = createContext();
 
 const Context = ({ children }) => {
   const [count, setCount] = useState({
-    num: 1,
-    id: "abcd",
+    id: "1",
+    num: 0,
   });
   return (
-    <DemoHook.Provider value={{ setCount, count }}>
+    <DemoHook.Provider value={{ count, setCount }}>
       {children}
     </DemoHook.Provider>
   );

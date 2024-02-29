@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo, useState } from "react";
 
 const ChildComponent = React.memo(({ handleChange, setShow }) => {
+  
   console.log("child ran");
   return (
     <>
